@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body{
+   background: url('bg.jpg'); 
+   background-size: 100vw 100vh;  
+   min-height: 100vh;
+   display: flex;
+   justify-content:center ;
+   align-items: center;
+}
+
+
+#board{
+    background:linear-gradient(#c4d7c4,#ffff07);
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+
+}
+.head{
+    background-color: red;
+    
+
+}
+
+.food{
+    background-color:black;
+    
+}
+.snake{
+    background-color:purple;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight:bold;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 55px;
+    right: 211px;
+    font-size: 25px;
+    font-weight: bold;
+}
